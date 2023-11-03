@@ -1,4 +1,4 @@
 # Hakatons_2023_OVG_12B
-## **Team PREZIS:**  ### - Peter
+**Team PREZIS:**  ### - Peter
 
-## **Team BIG C:**  ### - Kris - David Martinez
+**Team BIG C:**  ### - Kris - David Martinez
