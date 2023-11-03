@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Hakatons_2024_OVG_12B/1.0.0": {
+        "runtime": {
+          "Hakatons_2024_OVG_12B.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Hakatons_2024_OVG_12B/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
