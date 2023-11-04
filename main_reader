@@ -1,6 +1,6 @@
 import pdfplumber
 import matplotlib.pyplot as plt
-file_name = input("Please enter your grade file relative path")
+file_name = input("Please enter your grade file relative path:")
 with pdfplumber.open(file_name) as f:
     for i in f.pages:
        og_table_data = i.extract_tables()
