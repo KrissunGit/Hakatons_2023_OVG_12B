@@ -20,19 +20,19 @@ for row in table_data[1:]:  # Start from index 1 to skip the header row
         # Splitting the string by spaces and iterating through the resulting substrings
         for substring in item.split():
             try:
-                # Extracting digits and converting to int
-                number = ''.join(filter(str.isdigit, substring))
-                if number:  # Check if digits were found
-                    number_int = int(number)
-                    if number_int <= 10 and number_int > 0:  # Check if the integer is 10 or less and if the integer is more than 0
-                        grades.append(number_int)
-                        if not first_grade_found:  # Set the first encountered grade as the benchmark
-                            start_of_grade = number_int
-                            first_grade_found = True
+                # Additional check to exclude numbers with '%'
+                if '%' not in substring:
+                    # Extracting digits and converting to int
+                    number = ''.join(filter(str.isdigit, substring))
+                    if number:  # Check if digits were found
+                        number_int = int(number)
+                        if number_int <= 10 and number_int > 0:  # Check if the integer is 10 or less and if the integer is more than 0
+                            grades.append(number_int)
+                            if not first_grade_found:  # Set the first encountered grade as the benchmark
+                                start_of_grade = number_int
+                                first_grade_found = True
             except ValueError:
-                pass  # Skip non-convertible values
-
-    # Store the grades in the dictionary under the subject name
+                pass  
     subject_grades[subject] = (grades, start_of_grade)
 average_status_of_grades = 0
 for subject, (grades, start_of_grade) in subject_grades.items():
