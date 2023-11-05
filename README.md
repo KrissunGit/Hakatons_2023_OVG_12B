@@ -13,4 +13,5 @@
 In order for the code to function properly, the following libraries need to be installed through the terminal on the users device:
 -pip install pdfplumber
 -pip install matplotlib
-
+-vscode-pdf extension
+-python extension
